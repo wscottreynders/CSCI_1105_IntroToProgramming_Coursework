@@ -1,3 +1,4 @@
+  
 /* Author: Scott Reynders
 	Date: 12/17/19
 	
@@ -9,6 +10,7 @@ import java.util.Scanner;
 class  SolveTwobyTwoLinearEquation{
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
+			
 			System.out.print("Enter a: ");
 			double a = input.nextDouble();
 			
@@ -34,9 +36,12 @@ class  SolveTwobyTwoLinearEquation{
 		double yOne = a * d - b * c;
 		
 		if (xOne == 0) {
-			System.out.println(" Cannot divide by zero ");
+			System.out.println("Cannot divide by zero ");
 		}
 		
+		if (yOne == 0) {
+			System.out.println("Cannot divide by zero ");
+		}
 			System.out.println("x = " + x);
 			System.out.println("y = " + y);
 	}
