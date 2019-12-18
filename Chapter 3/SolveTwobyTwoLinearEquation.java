@@ -32,18 +32,16 @@ class  SolveTwobyTwoLinearEquation{
 		
 		double x = ((e * d - b * f) / (a * d - b * c));
 		double y = ((a * f - e * c) / (a * d - b * c));
-		double xOne = a * d - b * c;
-		double yOne = a * d - b * c;
+		double xyOne = a * d - b * c;
 		
-		if (xOne == 0) {
+		if (xyOne == 0) {
 			System.out.println("Cannot divide by zero ");
+			System.out.println("  ");
 		}
-		
-		if (yOne == 0) {
-			System.out.println("Cannot divide by zero ");
-		}
+		else {
 			System.out.println("x = " + x);
 			System.out.println("y = " + y);
+		}
 	}
 	
 }

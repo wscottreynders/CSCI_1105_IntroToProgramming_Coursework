@@ -21,12 +21,12 @@ class FindingThePerimeterOfATrinagle {
 		
 			double perimeter = sideA + sideB + sideC;
 			
-			if(sideA >= sideB + sideC)
+			if (sideA >= sideB + sideC)
 				System.out.println("Invalid");
-				else if (sideB >= sideA + sideC)
-					System.out.println("Invalid");
-						else if (sideC >= sideA + sideB)
-							System.out.println("Invalid");
+			else if (sideB >= sideA + sideC)
+				System.out.println("Invalid");
+			else if (sideC >= sideA + sideB)
+				System.out.println("Invalid");
 			else
 				System.out.println("The perimeter is " + perimeter);
 					
