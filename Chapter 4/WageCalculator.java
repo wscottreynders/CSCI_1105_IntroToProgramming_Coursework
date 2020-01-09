@@ -35,15 +35,19 @@ class WageCalculator {
 	double netPay = amountEarned - amountToFeds - amountToState;
 
 // This is were the the calculated values are displayed for the user.
+	System.out.println(" ");
 	System.out.println("Employee Name: " + employeeName);
 	System.out.println("Hours Worked: " + hoursWorked);
 	System.out.println("Pay Rate: " + "$" + hourlyPayRate);
-	System.out.println("Gross Pay: " + "$" + Math.round(amountEarned * 100) / 100.0);
+	System.out.println("Gross Pay: " + "$" + amountEarned);
 	System.out.println("Deductions: ");
-	System.out.println("        Federal Withholding (20.0%): " + "$" + Math.round(amountToFeds * 100) / 100.0);
-	System.out.println("        State Withholding (9.0%): " + "$" + Math.round(amountToState * 100) / 100.0);
-	System.out.println("        Total Deductions: " + "$" + Math.round(totalDeduction * 100) / 100.0);
-	System.out.println("Net Pay: " + "$" + Math.round(netPay * 100) / 100.0);
+	System.out.print("        Federal Withholding (20.0%): ");
+	System.out.printf("$%4.2f\n", amountToFeds);
+	System.out.print("        State Withholding (9.0%): "); 
+	System.out.printf("$%4.2f\n", amountToState);
+	System.out.print("        Total Deductions: ");
+	System.out.printf("$%4.2f\n", totalDeduction);
+	System.out.printf("Net Pay: $%4.2f\n", netPay);
 	
 	}
 }
