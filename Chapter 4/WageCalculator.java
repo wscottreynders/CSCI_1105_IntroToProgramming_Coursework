@@ -1,5 +1,5 @@
 /* Author: Scott Reynders
-	Date: 1/6/2020
+	Date: 1/9/2020
 	
 	Creating a calculator that calculates a specific employees wages after taxes.
 */
