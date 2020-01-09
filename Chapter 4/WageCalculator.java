@@ -13,7 +13,7 @@ class WageCalculator {
 	Scanner input = new Scanner(System.in);
 
 	System.out.print("Enter employee's name: ");
-	String employeeName = input.nextLine();
+	String employeeName = input.next();
 	
 	System.out.print("Enter number of hours worked: ");
 	double hoursWorked = input.nextDouble();
@@ -39,13 +39,13 @@ class WageCalculator {
 	System.out.println("Employee Name: " + employeeName);
 	System.out.println("Hours Worked: " + hoursWorked);
 	System.out.println("Pay Rate: " + "$" + hourlyPayRate);
-	System.out.println("Gross Pay: " + "$" + amountEarned);
+	System.out.printf("Gross Pay: $$%4.2f\n", + amountEarned);
 	System.out.println("Deductions: ");
-	System.out.print("        Federal Withholding (20.0%): ");
+	System.out.print("      Federal Withholding (20.0%): ");
 	System.out.printf("$%4.2f\n", amountToFeds);
-	System.out.print("        State Withholding (9.0%): "); 
+	System.out.print("      State Withholding (9.0%): "); 
 	System.out.printf("$%4.2f\n", amountToState);
-	System.out.print("        Total Deductions: ");
+	System.out.print("      Total Deductions: ");
 	System.out.printf("$%4.2f\n", totalDeduction);
 	System.out.printf("Net Pay: $%4.2f\n", netPay);
 	
